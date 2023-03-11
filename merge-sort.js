@@ -1,5 +1,5 @@
-/* BEST CASE: O(nlogn) time | O(1) space*/
-/* WORST CASE: O(nlogn) time | O(1) space*/
+/* BEST CASE: O(nlogn) time | O(N) space*/
+/* WORST CASE: O(nlogn) time | O(N) space*/
 
 function mergeSortMain(array) {
   if (array.length <= 1) return array;
@@ -39,3 +39,14 @@ function mergeSort(leftArr, rightArr) {
 }
 
 mergeSortMain([6, 7, 2, 3, 4, 5, 7]);
+
+/*
+Space complexity:
+
+The space complexity of the merge sort algorithm is O(n) 
+in the worst case, where n is the number of elements in 
+the input array. This space complexity is due to the temporary 
+arrays used to store the sorted subarrays during the merge operation. 
+However, the space complexity can be reduced to O(log n) by using an 
+iterative implementation or by merging in-place. 
+*/
