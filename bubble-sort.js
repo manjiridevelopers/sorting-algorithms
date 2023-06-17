@@ -1,6 +1,13 @@
 /* BEST CASE: O(n) time | O(1) space*/
 /* WORST CASE: O(n^2) time | O(1) space*/
 
+/* Algorithm: 
+  1. Loop through the array
+  2. Compare the current element with next element:
+        if current el >  next el: swap
+  3. Repeat the above steps
+*/
+
 function bubbleSort(array) {
   let arr = array;
   let check = true;
@@ -24,4 +31,4 @@ function swap(array, idx1, idx2) {
   array[idx2] = temp;
 }
 
-bubbleSort([6, 7, 2, 3, 4, 5, 7]);
+bubbleSort([0, 2, 1, 2, 0, 1]);

@@ -4,7 +4,7 @@
 function insertionSort(array) {
   let arr = array;
 
-  for (let i = 1; i < arr.length - 1; i++) {
+  for (let i = 1; i < arr.length; i++) {
     let j = i;
 
     while (j >= 1 && arr[j] < arr[j - 1]) {
@@ -21,4 +21,4 @@ function swap(array, idx1, idx2) {
   array[idx2] = temp;
 }
 
-insertionSort([6, 7, 2, 3, 4, 5, 7]);
+insertionSort([0, 2, 1, 2, 0, 1]);

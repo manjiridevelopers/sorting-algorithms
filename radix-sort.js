@@ -24,7 +24,7 @@ function countingSort(array, digit) {
     countArr[placeEl]++;
   }
 
-  for (let i = 1; i < countArr.length - 1; i++) {
+  for (let i = 1; i < countArr.length; i++) {
     countArr[i] += countArr[i - 1];
   }
 
@@ -34,12 +34,12 @@ function countingSort(array, digit) {
     sortedArr[countArr[placeEl]] = array[i];
   }
 
-  for (let i = 0; i < array.length - 1; i++) {
+  for (let i = 0; i < array.length; i++) {
     array[i] = sortedArr[i];
   }
 }
 
-radixSort([6, 7, 2, 3, 4, 5, 7]);
+radixSort([0, 2, 1, 2, 0, 1]);
 
 /*
 

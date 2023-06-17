@@ -32,7 +32,7 @@ function swap(array, idx1, idx2) {
   array[idx2] = temp;
 }
 
-quickSortMain([6, 7, 2, 3, 4, 5, 7]);
+quickSortMain([0, 2, 1, 2, 0, 1]);
 
 /*
 The average, worst, and best-case time and space complexity of the quick sort algorithm are as follows:

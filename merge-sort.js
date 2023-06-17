@@ -38,7 +38,7 @@ function mergeSort(leftArr, rightArr) {
   return sortedArr;
 }
 
-mergeSortMain([6, 7, 2, 3, 4, 5, 7]);
+mergeSortMain([0, 2, 1, 2, 0, 1]);
 
 /*
 Space complexity:

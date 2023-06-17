@@ -21,4 +21,4 @@ function swap(array, idx1, idx2) {
   array[idx2] = temp;
 }
 
-selectionSort([6, 7, 2, 3, 4, 5, 7]);
+selectionSort([0, 2, 1, 2, 0, 1]);
