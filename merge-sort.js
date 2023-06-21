@@ -1,26 +1,25 @@
 /* BEST CASE: O(nlogn) time | O(N) space*/
 /* WORST CASE: O(nlogn) time | O(N) space*/
 
-function mergeSortMain(array) {
+function mergeSort(array) {
   if (array.length <= 1) return array;
   let midIdx = Math.floor(array.length / 2);
   let leftArr = array.slice(0, midIdx);
   let rightArr = array.slice(midIdx);
 
-  let sortedArr = mergeSort(mergeSortMain(leftArr), mergeSortMain(rightArr));
+  let mergedArr = merge(mergeSort(leftArr), mergeSort(rightArr));
 
-  console.log(sortedArr);
-  return sortedArr;
+  return mergedArr;
 }
 
-function mergeSort(leftArr, rightArr) {
+function merge(leftArr, rightArr) {
   let sortedArr = [];
   let i = 0;
   let j = 0;
   let k = 0;
 
   while (i < leftArr.length && j < rightArr.length) {
-    if (leftArr[i] < rightArr[j]) {
+    if (leftArr[i] <= rightArr[j]) {
       sortedArr[k++] = leftArr[i++];
     } else {
       sortedArr[k++] = rightArr[j++];
@@ -38,8 +37,8 @@ function mergeSort(leftArr, rightArr) {
   return sortedArr;
 }
 
-mergeSortMain([0, 2, 1, 2, 0, 1]);
-
+const result = mergeSort([0, 2, 1, 2, 0, 1]);
+console.log(result);
 /*
 Space complexity:
 
